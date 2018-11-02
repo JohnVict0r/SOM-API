@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
-import ColorSom
+from ColorSom import SOM
 
 
 def index(request):
@@ -11,7 +11,6 @@ def index(request):
 	colorSom.train()
 	teste_vermelho=[45, 156, 115]
 	colorSom.winner(teste_vermelho)
-
 	return HttpResponse(colorSom)
 
 # Create your views here.
