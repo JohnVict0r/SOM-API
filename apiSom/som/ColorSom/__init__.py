@@ -1,1 +1,0 @@
-from SOM import ColorSensorSOM as ColorSensorSOM
